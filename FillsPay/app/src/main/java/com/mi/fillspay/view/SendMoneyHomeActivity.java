@@ -10,7 +10,7 @@ import com.mi.fillspay.R;
 import com.mi.fillspay.adapter.CircleLayoutManager;
 import com.mi.fillspay.adapter.SampleAdapter;
 
-public class UtilityActivity extends AppCompatActivity {
+public class SendMoneyHomeActivity extends AppCompatActivity {
 
     ViewGroup root;
     RecyclerView list;
@@ -21,7 +21,7 @@ public class UtilityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.utitity_main);
+        setContentView(R.layout.send_money_main);
 
         root = (ViewGroup)findViewById(R.id.root);
         list = (RecyclerView)findViewById(R.id.recycler_view);

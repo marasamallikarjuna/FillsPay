@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="60dp"
-    android:layout_height="60dp"
-    android:gravity="center"
-    android:textColor="@android:color/white"
-    android:layout_margin="8dp"
-    android:textSize="22sp"
-    android:background="@drawable/item_background"
-    tools:text="1" />
+
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_registr_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/amarante"
+        android:text="Test"/>
+
+
+</LinearLayout>
+
+

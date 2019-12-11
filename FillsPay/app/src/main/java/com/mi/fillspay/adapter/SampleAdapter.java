@@ -1,11 +1,15 @@
-package cdflynn.android.sample.turn;
+package com.mi.fillspay.adapter;
 
 import android.content.Context;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.mi.fillspay.R;
 
 public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleViewHolder> {
 
@@ -17,13 +21,16 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
 
     @Override
     public SampleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        TextView sampleView = (TextView) layoutInflater.inflate(R.layout.view_sample, parent, false);
-        return new SampleViewHolder(sampleView);
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_sample, parent, false);
+
+
+        return new SampleViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(SampleViewHolder holder, int position) {
-        holder.tv.setText(Integer.toString(position));
+
     }
 
     @Override
@@ -33,11 +40,11 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
 
     class SampleViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tv;
+       // TextView tv;
 
         public SampleViewHolder(View itemView) {
             super(itemView);
-            this.tv = (TextView) itemView;
+          //  this.tv = (TextView) itemView;
         }
     }
 }

@@ -46,7 +46,7 @@
                 android:layout_weight="0.8"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Utility Payments"
+                android:text="Send Money"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -57,11 +57,11 @@
                 android:layout_weight="1.2"
                 android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/icon_reg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_back_arrow" />
+                <ImageView
+                    android:id="@+id/icon_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_arrow" />
             </LinearLayout>
         </LinearLayout>
 
@@ -74,7 +74,7 @@
         android:id="@+id/relativeLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="190dp"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 

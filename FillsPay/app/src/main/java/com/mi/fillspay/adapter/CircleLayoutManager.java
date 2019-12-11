@@ -1,26 +1,27 @@
-package cdflynn.android.library.turn;
+package com.mi.fillspay.adapter;
 
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Build;
+import android.view.View;
+import android.view.ViewGroup;
+
 import androidx.annotation.Dimension;
 import androidx.annotation.IntDef;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.view.View;
-import android.view.ViewGroup;
 
 /**
  * An extension of {@link LinearLayoutManager}, where each list item can be offset along a circular
  * trajectory.
  */
-public class TurnLayoutManager extends LinearLayoutManager {
+public class CircleLayoutManager extends LinearLayoutManager {
 
     private static final int MIN_RADIUS = 0;
     private static final int MIN_PEEK = 0;
 
     /**
-     * Valid gravity settings for a {@link TurnLayoutManager}.  This defines the direction of the center point
+     * Valid gravity settings for a {@link CircleLayoutManager}.  This defines the direction of the center point
      * around which items will rotate.
      */
     @IntDef(value = {
@@ -54,7 +55,7 @@ public class TurnLayoutManager extends LinearLayoutManager {
     private Point center;
 
     /**
-     * Define a new {@link TurnLayoutManager} with the given settings.<br>
+     * Define a new {@link CircleLayoutManager} with the given settings.<br>
      * {@code gravity} and {@code orientation} combine to define the curvature of the turn:
      * <br><br>
      * {@link Gravity#START}<br>
@@ -125,12 +126,12 @@ public class TurnLayoutManager extends LinearLayoutManager {
      * @param rotate       Should the items rotate as if on a turning surface, or should they maintain
      *                     their angle with respect to the screen as they orbit the center point?
      */
-    public TurnLayoutManager(Context context,
-                             @Gravity int gravity,
-                             @Orientation int orientation,
-                             @Dimension int radius,
-                             @Dimension int peekDistance,
-                             boolean rotate) {
+    public CircleLayoutManager(Context context,
+                               @Gravity int gravity,
+                               @Orientation int orientation,
+                               @Dimension int radius,
+                               @Dimension int peekDistance,
+                               boolean rotate) {
         super(context, orientation, false);
         this.gravity = gravity;
         this.radius = Math.max(radius, MIN_RADIUS);
@@ -140,11 +141,11 @@ public class TurnLayoutManager extends LinearLayoutManager {
     }
 
     /**
-     * Create a {@link TurnLayoutManager} with default settings for gravity, orientation, and rotation.
+     * Create a {@link CircleLayoutManager} with default settings for gravity, orientation, and rotation.
      */
-    public TurnLayoutManager(Context context,
-                             @Dimension int radius,
-                             @Dimension int peekDistance) {
+    public CircleLayoutManager(Context context,
+                               @Dimension int radius,
+                               @Dimension int peekDistance) {
         this(context, Gravity.START, Orientation.VERTICAL, radius, peekDistance, false);
     }
 
