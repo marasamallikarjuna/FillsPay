@@ -1,6 +1,7 @@
 package com.mi.fillspay.view;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +40,13 @@ public class MobileRechargeHomeActivity extends AppCompatActivity {
         list.setLayoutManager(layoutManager);
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
+        findViewById(R.id.icon_reg).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
     }
 

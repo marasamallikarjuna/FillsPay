@@ -76,6 +76,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="190dp"
         android:gravity="center"
+        android:background="@null"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <include layout="@layout/scroll_recycle_main" />
@@ -83,15 +84,37 @@
     </RelativeLayout>
 
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
-        android:src="@drawable/ic_side_utitity"
         app:layout_constraintBottom_toBottomOf="@+id/relativeLayout3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_side_utitity"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:rotation="90"
+            android:id="@+id/textViewNetwork"
+            app:fontFamily="@font/amarante"
+            android:text="Choose your Network"/>
+
+
+
+    </RelativeLayout>
 
 
     <ImageView

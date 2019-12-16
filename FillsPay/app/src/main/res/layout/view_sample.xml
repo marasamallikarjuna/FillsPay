@@ -11,15 +11,16 @@
         android:layout_margin="8dp"
         android:src="@drawable/ic_registr_icon"/>
 
-    <TextView
+    <com.mi.fillspay.adapter.GradientTextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:textSize="15sp"
         android:gravity="center"
         android:layout_marginLeft="5dp"
-        android:textColor="@android:color/black"
         app:fontFamily="@font/amarante"
-        android:text="Test"/>
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:text="DemoTest"/>
 
 
 </LinearLayout>

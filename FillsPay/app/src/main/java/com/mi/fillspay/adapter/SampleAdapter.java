@@ -1,10 +1,14 @@
 package com.mi.fillspay.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,11 +29,13 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_sample, parent, false);
 
 
+
         return new SampleViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(SampleViewHolder holder, int position) {
+
 
     }
 
@@ -40,11 +46,11 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
 
     class SampleViewHolder extends RecyclerView.ViewHolder {
 
-       // TextView tv;
+        TextView tv;
 
         public SampleViewHolder(View itemView) {
             super(itemView);
-          //  this.tv = (TextView) itemView;
+            this.tv = (TextView) itemView.findViewById(R.id.textView);
         }
     }
 }
