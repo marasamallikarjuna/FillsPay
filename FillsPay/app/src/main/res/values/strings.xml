@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FillsPay</string>
+    <string name="email">Email</string>
+    <string name="bottom_sheet_option_heading">test</string>
+</resources>
