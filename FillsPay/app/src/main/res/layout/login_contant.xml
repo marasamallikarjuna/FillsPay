@@ -70,37 +70,7 @@
             app:backgroundTint="@color/colorEdit" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fontFamily="@font/amarante"
-            android:textSize="15dp"
-            android:textColor="@color/colorEdit"
-            android:text="Have an new account? "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fontFamily="@font/amarante"
-            android:textSize="15dp"
-            android:id="@+id/regTextView"
-            android:textColor="@color/colorAccent"
-            android:text="Register"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fontFamily="@font/amarante"
-            android:textSize="12dp"
-            android:textColor="@color/colorEdit"
-            android:text="  Forgot Password"/>
-
-    </LinearLayout>
 
 
 

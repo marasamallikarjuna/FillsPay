@@ -74,9 +74,18 @@
         android:id="@+id/relativeLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="220dp"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/half_circle"/>
 
         <include layout="@layout/scroll_recycle_main" />
 

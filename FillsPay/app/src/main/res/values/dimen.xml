@@ -14,7 +14,7 @@
 
     <dimen name="md_bottom_sheet_separator_top_margin">7dp</dimen>
 
-    <dimen name="list_size">300dp</dimen>
-    <dimen name="list_peek">150dp</dimen>
-    <dimen name="list_radius">400dp</dimen>
+    <dimen name="list_size">400dp</dimen>
+    <dimen name="list_peek">130dp</dimen>
+    <dimen name="list_radius">350dp</dimen>
 </resources>

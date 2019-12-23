@@ -5,13 +5,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_margin="8dp"
-        android:src="@drawable/ic_registr_icon"/>
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
 
-    <com.mi.fillspay.adapter.GradientTextView
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_registr_icon"/>
+
+    </FrameLayout>
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:textSize="15sp"
@@ -19,7 +26,9 @@
         android:layout_marginLeft="5dp"
         app:fontFamily="@font/amarante"
         android:textStyle="bold"
+        android:textColor="@color/colorBl"
         android:id="@+id/textView"
+        android:visibility="gone"
         android:text="DemoTest"/>
 
 
