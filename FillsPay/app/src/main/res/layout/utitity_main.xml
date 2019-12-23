@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
-        android:src="@drawable/ic_side_utitity"
+        android:src="@drawable/ic_rech_side"
         app:layout_constraintBottom_toBottomOf="@+id/relativeLayout3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
