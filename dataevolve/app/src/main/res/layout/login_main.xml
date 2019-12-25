@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/bg">
+
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/spandanawith_ap" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Spandana Suraksha"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.024"
+        android:textColor="#082233"
+        android:textSize="22sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="A.P. Police Citizen Service Portal"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_medium"
+        android:letterSpacing="0.018"
+        android:textColor="#082233"
+        android:textSize="16sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icons" />
+    <EditText
+        android:id="@+id/mmobile_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="46dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:backgroundTint="@color/editTextColor"
+        android:textColor="@color/editTextColor"
+        android:textColorHint="@color/editTextColor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/loginText"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal"
+        android:textColor="@color/editTextColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:text="We Will send a six digit OTP on this number to verify your account." />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/get_otp_layout"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/get_otp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            android:text="Get OTP"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/submit_otp_layout"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/otp_layout"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:id="@+id/otp1"
+                android:textColor="@color/editTextColor"
+                android:background="@drawable/edit_box"/>
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:id="@+id/otp2"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/editTextColor"
+                android:background="@drawable/edit_box"/>
+
+
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:id="@+id/otp3"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/editTextColor"
+                android:background="@drawable/edit_box"/>
+
+
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:id="@+id/otp4"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/editTextColor"
+                android:background="@drawable/edit_box"/>
+
+
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:id="@+id/otp5"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/editTextColor"
+                android:background="@drawable/edit_box"/>
+
+
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:id="@+id/otp6"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/editTextColor"
+                android:background="@drawable/edit_box"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/editTextColor"
+            android:gravity="center_horizontal"
+            android:id="@+id/enter_layout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/otp_layout"
+            android:fontFamily="@font/poppins"
+            android:text="Enter the code manually or resend if not recieved."/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_layout"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:text="Resend OTP"
+                android:id="@+id/reSendText"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/azure"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/timeText"
+                android:text=""
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/timer"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/submit_otp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Submit OTP"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

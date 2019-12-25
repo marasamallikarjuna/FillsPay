@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008deb</color>
+    <color name="colorPrimaryDark">#008deb</color>
+    <color name="colorAccent">#008deb</color>
+    <color name="azure">#008deb</color>
+    <color name="aquamarine">#00d2c4</color>
+    <color name="bg">#e4f5f4</color>
+    <color name="timer">#F44336</color>
+    <color name="editTextColor">#082233</color>
+    <color name="boxcolor">#ececec</color>
+
+</resources>
