@@ -1,6 +1,7 @@
 package com.mi.fillspay.view;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import com.mi.fillspay.R;
 
 public class BottomSheetViewFragment extends BottomSheetDialogFragment {
     public static final String TAG = "BottomSheetViewFragment";
+    ImageView settings_img;
 
 
     public static BottomSheetViewFragment newInstance() {
@@ -39,7 +41,12 @@ public class BottomSheetViewFragment extends BottomSheetDialogFragment {
             }
         });
 
-
+        view.findViewById(R.id.utilImageView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),SettingsActivity.class));
+            }
+        });
 
         // get the views and attach the listener
 
