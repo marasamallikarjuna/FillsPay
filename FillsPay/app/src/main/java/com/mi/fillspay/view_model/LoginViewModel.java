@@ -14,10 +14,12 @@ public class LoginViewModel extends AndroidViewModel {
 
     private LoginRepository loginRepository;
     private LiveData<LoginResponse> loginResponseLiveData;
+
     public LoginViewModel(@NonNull Application application) {
         super(application);
         loginRepository=new LoginRepository();
     }
+
     public LiveData<LoginResponse> getLoginResponseLiveData(LoginRequest loginRequest) {
         this.loginResponseLiveData = loginRepository.postLoginRepository(loginRequest);
         return loginResponseLiveData;

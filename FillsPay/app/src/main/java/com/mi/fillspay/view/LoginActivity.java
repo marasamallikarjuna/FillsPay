@@ -31,8 +31,9 @@ public class LoginActivity extends AppCompatActivity {
         logoImageView=findViewById(R.id.logoImageView);
         titleTextView=findViewById(R.id.titleTextView);
 
-        loginViewModel= ViewModelProviders.of(this).get(LoginViewModel.class);
+        //test commit
 
+        loginViewModel= ViewModelProviders.of(this).get(LoginViewModel.class);
 
         findViewById(R.id.regTextView).setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -45,6 +46,9 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent,activityOptions.toBundle());
             }
         });
+
+
+        
 
         findViewById(R.id.loginImageView).setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
