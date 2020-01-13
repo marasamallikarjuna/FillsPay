@@ -7,4 +7,11 @@
     <color name="colorBl">#333232</color>
     <color name="startColor">#FFE41D5A</color>
     <color name="endColor">#FF212784</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_dull">#1B1B1B</color>
+    <color name="white_border">#FCFAFA</color>
+    <color name="color_start">#FF212784</color>
+    <color name="light_grey">#F0EFEF</color>
+    <color name="text_grey">#D1D0D0</color>
+    <color name="color_end">#FFE41D5A</color>
 </resources>

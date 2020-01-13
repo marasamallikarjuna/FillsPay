@@ -47,9 +47,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
-        
-
         findViewById(R.id.loginImageView).setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override

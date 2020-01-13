@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mi.fillspay.R;
 import com.mi.fillspay.adapter.CircleLayoutManager;
 import com.mi.fillspay.adapter.SampleAdapter;
+import com.mi.fillspay.utilities.FragmentUtil;
 
 public class MobileRechargeHomeActivity extends AppCompatActivity {
 
     ViewGroup root;
     RecyclerView list;
-
     private CircleLayoutManager layoutManager;
     private SampleAdapter adapter;
 
@@ -40,6 +40,8 @@ public class MobileRechargeHomeActivity extends AppCompatActivity {
         list.setLayoutManager(layoutManager);
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
+        FragmentUtil.setFragment(new MobileRecFragOne(),this,"Mobile recharge fragment one",R.id.content_frag,false);
 
         findViewById(R.id.icon_reg).setOnClickListener(new View.OnClickListener() {
             @Override
