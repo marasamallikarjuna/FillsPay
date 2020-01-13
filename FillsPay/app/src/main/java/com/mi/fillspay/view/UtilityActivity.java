@@ -12,10 +12,8 @@ import com.mi.fillspay.adapter.CircleLayoutManager;
 import com.mi.fillspay.adapter.SampleAdapter;
 
 public class UtilityActivity extends AppCompatActivity {
-
     ViewGroup root;
     RecyclerView list;
-
     private CircleLayoutManager layoutManager;
     private SampleAdapter adapter;
 

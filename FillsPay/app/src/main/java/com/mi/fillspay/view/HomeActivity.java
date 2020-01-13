@@ -54,7 +54,6 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void transfer(){
 
     }

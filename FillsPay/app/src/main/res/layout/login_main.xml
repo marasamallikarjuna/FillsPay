@@ -11,42 +11,42 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_130sdp"
         android:background="@drawable/ic_header"
-        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/icon_reg"
+            android:layout_centerInParent="true"
             android:src="@drawable/ic_registr_icon" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/icon_reg"
-            android:text=" Login"
+            android:text="Login"
+            android:gravity="center"
             android:textStyle="bold"
             android:id="@+id/titleTextView"
             app:fontFamily="@font/amarante"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
-
+            android:textSize="@dimen/_18ssp" />
 
     </RelativeLayout>
-
 
     <RelativeLayout
         android:id="@+id/relativeLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <include layout="@layout/login_contant" />
-
 
     </RelativeLayout>
 
@@ -90,7 +90,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_130sdp"
         android:background="@drawable/ic_bottom"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -104,14 +104,13 @@
     </RelativeLayout>
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_15sdp"
         android:src="@drawable/logo"
         android:id="@+id/logoImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
