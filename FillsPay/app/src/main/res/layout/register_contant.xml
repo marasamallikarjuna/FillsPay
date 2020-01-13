@@ -29,6 +29,7 @@
         android:drawablePadding="4dp"
         app:fontFamily="@font/amarante"
         android:textSize="15dp"
+        android:id="@+id/emailEdit"
         android:inputType="textEmailAddress|textNoSuggestions"
         android:textColor="@android:color/black"
         android:textCursorDrawable="@null"
@@ -60,6 +61,7 @@
         android:inputType="number|textNoSuggestions"
         android:textColor="@android:color/black"
         android:textSize="15dp"
+        android:id="@+id/mobileEdit"
         android:textCursorDrawable="@null"
         app:backgroundTint="@color/colorEdit" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -91,6 +93,7 @@
         android:drawableLeft="@drawable/ic_lock"
         android:drawablePadding="4dp"
         android:textSize="15dp"
+        android:id="@+id/passwordEdit"
         android:inputType="textPassword|textNoSuggestions"
         android:textColor="@android:color/black"
         android:textColorHint="@color/colorAccent"
@@ -122,6 +125,7 @@
         android:drawableLeft="@drawable/ic_lock"
         android:drawablePadding="4dp"
         app:fontFamily="@font/amarante"
+        android:id="@+id/confirmEdit"
         android:inputType="textPassword|textNoSuggestions"
         android:textColor="@android:color/black"
         android:textColorHint="@color/colorAccent"

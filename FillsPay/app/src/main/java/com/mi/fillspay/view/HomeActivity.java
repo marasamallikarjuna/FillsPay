@@ -14,11 +14,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.mi.fillspay.R;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends BaseActivity {
 
     ImageView reImageView,utilImageView,sendImageView;
     LinearLayout enterImageView;
@@ -82,31 +81,31 @@ public class HomeActivity extends AppCompatActivity {
             switch (event){
                 case DragEvent.ACTION_DRAG_ENTERED:
                     final View v=(View) dragEvent.getLocalState();
-                    if (v.getId()==R.id.sendImageView){
+                    if (v.getId()== R.id.sendImageView){
                        // Toast.makeText(HomeActivity.this,"Send Money",Toast.LENGTH_SHORT).show();
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                            Intent intent   = new Intent(HomeActivity.this,SendMoneyHomeActivity.class);
+                            Intent intent   = new Intent(HomeActivity.this, SendMoneyHomeActivity.class);
                             Pair[] pairs    = new Pair[1];
                             pairs[0] = new Pair<View,String>(titleTextView,"tvLogin");
                             ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(HomeActivity.this,pairs);
                             startActivity(intent,activityOptions.toBundle());
                         }
 
-                    }else if (v.getId()==R.id.utilImageView){
+                    }else if (v.getId()== R.id.utilImageView){
                       //  Toast.makeText(HomeActivity.this,"Util",Toast.LENGTH_SHORT).show();
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                            Intent intent   = new Intent(HomeActivity.this,UtilityActivity.class);
+                            Intent intent   = new Intent(HomeActivity.this, UtilityActivity.class);
                             Pair[] pairs    = new Pair[1];
                             pairs[0] = new Pair<View,String>(titleTextView,"tvLogin");
                             ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(HomeActivity.this,pairs);
                             startActivity(intent,activityOptions.toBundle());
                         }
 
-                    }else if (v.getId()==R.id.rechargImageView){
+                    }else if (v.getId()== R.id.rechargImageView){
                       //  Toast.makeText(HomeActivity.this,"Mobile Recharge",Toast.LENGTH_SHORT).show();
 
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                            Intent intent   = new Intent(HomeActivity.this,MobileRechargeHomeActivity.class);
+                            Intent intent   = new Intent(HomeActivity.this, MobileRechargeHomeActivity.class);
                             Pair[] pairs    = new Pair[1];
                             pairs[0] = new Pair<View,String>(titleTextView,"tvLogin");
                             ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(HomeActivity.this,pairs);

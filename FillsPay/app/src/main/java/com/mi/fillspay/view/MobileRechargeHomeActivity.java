@@ -4,14 +4,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mi.fillspay.R;
 import com.mi.fillspay.adapter.CircleLayoutManager;
 import com.mi.fillspay.adapter.SampleAdapter;
 
-public class MobileRechargeHomeActivity extends AppCompatActivity {
+public class MobileRechargeHomeActivity extends BaseActivity {
 
     ViewGroup root;
     RecyclerView list;

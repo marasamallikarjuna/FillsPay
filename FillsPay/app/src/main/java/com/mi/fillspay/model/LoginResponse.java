@@ -30,7 +30,7 @@ public class LoginResponse {
     private String path;
     @SerializedName("details")
     @Expose
-    private Object details;
+    private String details;
 
     public String getTimeStamp() {
         return timeStamp;
@@ -68,7 +68,7 @@ public class LoginResponse {
         return details;
     }
 
-    public void setDetails(Object details) {
+    public void setDetails(String details) {
         this.details = details;
     }
 }
