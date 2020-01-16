@@ -15,7 +15,6 @@
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,10 +30,7 @@
             app:fontFamily="@font/amarante"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
-
-
     </RelativeLayout>
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -48,7 +44,6 @@
         <include layout="@layout/register_contant" />
 
     </RelativeLayout>
-
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
