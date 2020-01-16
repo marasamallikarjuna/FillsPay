@@ -35,7 +35,7 @@ public class LoginActivity extends BaseActivity {
         emailEdit=findViewById(R.id.emailEdit);
         passwordEdit=findViewById(R.id.passwordEdit);
 
-        loginViewModel= ViewModelProviders.of(this).get(LoginViewModel.class);
+        loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
 
 
         findViewById(R.id.loginImageView).setOnClickListener(new View.OnClickListener() {
