@@ -21,7 +21,7 @@
         android:layout_marginTop="-8dp"
         app:backgroundTint="@color/colorEdit">
 
-        <androidx.appcompat.widget.AppCompatEditText
+         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_email"
@@ -29,6 +29,7 @@
             android:drawablePadding="4dp"
             app:fontFamily="@font/amarante"
             android:textSize="15dp"
+             android:id="@+id/emailEdit"
             android:inputType="textEmailAddress|textNoSuggestions"
             android:textColor="@android:color/black"
             android:textCursorDrawable="@null"
@@ -63,6 +64,7 @@
             android:drawableLeft="@drawable/ic_lock"
             android:drawablePadding="4dp"
             android:textSize="15dp"
+            android:id="@+id/passwordEdit"
             android:inputType="textPassword|textNoSuggestions"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorAccent"

@@ -15,6 +15,12 @@ public class RegisterRequest {
     @Expose
     private String password;
 
+    public RegisterRequest(String contactNumber, String emailId, String password) {
+        this.contactNumber = contactNumber;
+        this.emailId = emailId;
+        this.password = password;
+    }
+
     public String getContactNumber() {
         return contactNumber;
     }

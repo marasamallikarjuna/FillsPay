@@ -5,14 +5,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mi.fillspay.R;
 import com.mi.fillspay.adapter.CircleLayoutManager;
 import com.mi.fillspay.adapter.SampleAdapter;
 
-public class SendMoneyHomeActivity extends AppCompatActivity {
+public class SendMoneyHomeActivity extends BaseActivity {
 
     ViewGroup root;
     RecyclerView list;
