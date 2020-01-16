@@ -13,4 +13,11 @@
     <color name="color_start">#FF212784</color>
     <color name="color_end">#FFE41D5A</color>
     <color name="light_grey">#F0EFEF</color>
+
+    <!-- circular seek bar colours-->
+
+    <color name="def_wheel_color">#DDDDDF</color>
+    <color name="def_reached_color">#F11561</color>
+    <color name="def_pointer_color">#FFFFFF</color>
+
 </resources>
